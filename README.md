@@ -32,7 +32,8 @@ CREATE TABLE CharacterCard (
     Appearance TEXT DEFAULT '',
     Personality TEXT DEFAULT '',
     Quote TEXT DEFAULT ''
-);   
+);  
+```
 ## Скрипт для заполения таблиц
 ```sql
 INSERT INTO CharacterCard(Description, Name, Image, CharacterPhoto, Appearance, Personality, Quote)
@@ -477,6 +478,7 @@ VALUES('<div class="mcf-card-article__link ">
                                         </span>
                                     </a>
                                 </div>');
+```
 **Запуск:**  
     - `Запустите проект в Вашей IDE.`
     - `Перейдите на 127.0.0.1:1233 в Вашем веб-браузере`
@@ -503,4 +505,3 @@ VALUES('<div class="mcf-card-article__link ">
 - `127.0.0.1:1233` - перейдите по данному адресу для просмотра персонажей
 - `http://127.0.0.1:1233/character-card/detail/{id}`- для ознакомления с деталями персонажа, перейдите по адресу, заменив `{id}` на идентификатор конкретного персонажа, или нажиме на имя персонажа под фотографией.
 - На странице деталей персонажа Вы сможете увидеть его описание, цитату, внешность, характер и фотографию.
-
